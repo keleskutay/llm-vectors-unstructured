@@ -9,8 +9,8 @@ load_dotenv()
 class TestEnvironment(unittest.TestCase):
 
     skip_env_variable_tests = True
-    skip_openai_test = True
-    skip_neo4j_test = True
+    skip_openai_test = False
+    skip_neo4j_test = False
 
     def test_env_file_exists(self):
         env_file_exists = True if find_dotenv() > "" else False
