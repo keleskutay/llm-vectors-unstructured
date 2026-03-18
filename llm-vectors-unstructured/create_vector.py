@@ -4,7 +4,7 @@ load_dotenv()
 
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 
-COURSES_PATH = "llm-vectors-unstructured/data/asciidoc"
+COURSES_PATH = "data/asciidoc"
 
 # Load lesson documents
 loader = DirectoryLoader(COURSES_PATH, glob="**/lesson.adoc", loader_cls=TextLoader)
